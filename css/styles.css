@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    /* font-family: "Never Settle Demo"; */
+}
+
+@font-face {
+    font-family: 'kekw';
+    src: url('NinjaNaruto-YOn4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "kekw";
+}
+.parent {
+    position: relative;
+    display: inline-block;
+}
+
+.child {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.outer1 {
+    position: relative;
+    height: 30px;
+    width: 80%;
+    margin-right: 15px;
+}
+
+.outer2 {
+    position: relative;
+    height: 30px;
+    width: 80%;
+    margin-left: 15px;
+}
+
+.player-health {
+    background-color: red;
+    position: relative;
+    height: 30px;
+    padding: 5px;
+    border-radius: 100px;
+    border: solid 5px #404040;
+}
+
+.enemy-health {
+    background-color: red;
+    position: relative;
+    height: 30px;
+    padding: 5px;
+    border-radius: 100px;
+    border: solid 5px #404040;
+}
+
+.tenten {
+    height: 30px;
+    border-radius: 100px;
+    border: solid 5px #404040;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.top-hp {
+    background-color: greenyellow;
+    position: absolute;
+    transition: width 1s;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.top-hp2 {
+    background-color: greenyellow;
+    position: absolute;
+    transition: width 1s;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.timer {
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: green;
+    border: solid 5px #404040;
+    font-family: 'kekw';
+}
+
+.game-over-outer {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+    color: #F58840;
+    width: 50%;
+    height: 50%;
+    border: solid 5px #F58840;
+    position: absolute;
+    left: 320px;
+    right: 0;
+    bottom: 0;
+    top: 140px;
+    z-index: 2;
+}
+
+.goe {
+    font-family: 'kekw';
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.restart-button {
+    height: 40px;
+    width: 40px;
+}
+
+.wins {
+    text-decoration: underline;
+    text-decoration-color: #F58840;
+}
+
+.restart {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.restart:hover {
+    color: whitesmoke
+}
+
+.diff_font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.controlsTitle {
+    text-align: center;
+    text-decoration: underline;
+    color: purple;
+}
+
+.controlsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.controlsSeparator {
+    display: flex;
+    height: 100px;
+    width: 3px;
+    background-color: red;
+}
+
+#customers {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-right: 140px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: purple;
+    color: white;
+}
+
+.playerNumber {
+    padding-left: 40% !important;
+    color: purple !important;
+    background-color: whitesmoke !important;
+    text-decoration: underline purple;
+}
+
+
+
+
+/* Footer */

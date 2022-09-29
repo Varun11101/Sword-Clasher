@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- <link rel="stylesheet" href="stylesheet.css"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>SwordsFight</title>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="game-over-outer">
+      <div class="goe wins" id="display-result">Player 1 Wins</div>
+      <div class="goe restart" id="restart-game">Restart</div>
+    </div>
+    <div class="child">
+      <div class="outer1">
+        <div class="player-health"></div>
+        <div class="top-hp tenten"></div>
+        <div style="
+              width: 20px;
+              height: 20px;
+              color: orange;
+              display: flex;
+              padding-top: 25px;
+            ">
+          Stamina
+          <span id="attack-limit-p1" style="padding-left: 10px; color: whitesmoke">
+            30
+          </span>
+        </div>
+      </div>
+
+      <div class="timer" id="timer">60</div>
+
+      <div class="outer2">
+        <div class="enemy-health"></div>
+        <div class="top-hp2 tenten"></div>
+        <div style="
+              width: 20px;
+              height: 20px;
+              color: orange;
+              display: flex;
+              padding-top: 25px;
+              padding-left: 520px;
+            ">
+          Stamina
+          <span id="attack-limit-p2" style="padding-left: 10px; color: whitesmoke">
+            30
+          </span>
+        </div>
+      </div>
+    </div>
+    <canvas></canvas>
+  </div>
+
+  <!-- Controls section -->
+  <h1 class="controlsTitle"> Controls </h1>
+  <div class="controlsContainer">
+    <div class="playerOneControls">
+      <!-- <div>Player 1</div> -->
+      <table id="customers">
+        <tr>
+          <th class="playerNumber" colspan="2">Player 1</th>
+        </tr>
+        <tr>
+          <th>Key</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Spacebar</td>
+          <td>Attack</td>
+        </tr>
+        <tr>
+          <td>W</td>
+          <td>Jump</td>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>Move Left</td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>Fast Jump Down</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Move Right</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- <div class="controlsSeparator">
+
+    </div> -->
+
+    <div class="playerTwoControls">
+      <!-- <div>Player 2</div> -->
+      <table id="customers">
+        <tr>
+          <th class="playerNumber" colspan="2">Player 2</th>
+        </tr>
+        <tr>
+          <th>Key</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Forward Slash ( / )</td>
+          <td>Attack</td>
+        </tr>
+        <tr>
+          <td>Arrow Up</td>
+          <td>Jump</td>
+        </tr>
+        <tr>
+          <td>Arrow Left</td>
+          <td>Move Left</td>
+        </tr>
+        <tr>
+          <td>Arrow Down</td>
+          <td>Fast Jump Down</td>
+        </tr>
+        <tr>
+          <td>Arrow Right</td>
+          <td>Move Right</td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+  </div>
+
+  
+
+  <script src="./js/utils.js"></script>
+  <script src="./js/sfx.js"></script>
+  <script src="./js/preventDefault.js"></script>
+  <script src="./js/classes.js"></script>
+  <script src="./js/countdown.js"></script>
+  <script src="./index.js"></script>
+  <script src="./js/key_controls.js"></script>
+</body>
+
+</html>
