@@ -58,9 +58,9 @@ var sfx = {
 };
 
 sfx.startBgm.play();
-setTimeout(() => {
-    sfx.cellEntry.play();
-}, 5000);
-setTimeout(() => {
-    sfx.vegetaEntry.play();
-}, 2000);
+// setTimeout(() => {
+//     sfx.cellEntry.play();
+// }, 5000);
+// setTimeout(() => {
+//     sfx.vegetaEntry.play();
+// }, 2000);
